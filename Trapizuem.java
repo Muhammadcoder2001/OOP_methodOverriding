@@ -3,8 +3,6 @@ package OOP_overriding;
 public class Trapizuem extends GeometricFigure{
     private int sideA;
     private int sideB;
-//    private int mainA;
-//    private int mainB;
     private int high;
     private double per;
 
@@ -14,13 +12,15 @@ public class Trapizuem extends GeometricFigure{
         this.high = high;
 
     }
-
+    @Override
     public void  perimetr(){
+        super.perimetr();
         this.per = (this.sideA * 2) + (this.sideB * 2);
         System.out.println("Perimetr of the Trapizuem is equal to " + this.per);
     }
-
+    @Override
     public void area (){
+        super.area();
         double S =( double) 1/2 * (this.sideA + this.high) * this.high;
         System.out.println("Area of the Trapizuem is equal to " + S);
     }

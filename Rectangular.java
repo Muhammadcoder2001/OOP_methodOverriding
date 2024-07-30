@@ -11,13 +11,15 @@ public class Rectangular extends  GeometricFigure{
         this.sideB = sideB;
 
     }
-
+    @Override
     public  void perimetr(){
+        super.perimetr();
         this.per = 2 * (this.sideA + this.sideB);
         System.out.println("Perimetr of Rectangular is equal to " + this.per);
     }
-
+    @Override
     public void area(){
+        super.area();
         double S = this.sideA * this.sideB;
         System.out.println("Area of the Rectangular is equal to " + S);
     }

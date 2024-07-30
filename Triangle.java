@@ -12,15 +12,17 @@ public class Triangle extends GeometricFigure {
     this.c = c;
 
     }
-
+    @Override
     public void perimetr(){
+        super.perimetr();
         double per = this.a + this.b + this.c;
         this.per = per;
         System.out.println("Perimetr : " + this.per);
 
     }
-
+    @Override
     public  void area(){
+        super.area();
         double area = Math.sqrt(per * (per - this.a)* (per - this.b)* (per - this.c));
         System.out.println("Area of Triangle is equal to " + area);
     }
