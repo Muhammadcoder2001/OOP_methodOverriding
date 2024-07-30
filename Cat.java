@@ -7,13 +7,13 @@ public class Cat extends Animal{
 
     public Cat () {
         this.name = "Molly";
-
+        this.sound = "meow meow";
     }
 
     @Override
     public void sound() {
         super.sound();
-        System.out.println("meow meow");
+        System.out.println(this.sound);
     }
 
     @Override
